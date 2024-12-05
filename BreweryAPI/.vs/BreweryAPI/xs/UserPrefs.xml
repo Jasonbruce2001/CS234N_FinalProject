@@ -1,4 +1,52 @@
 ﻿<Properties StartupConfiguration="{88F60712-E9ED-48F6-A82F-7B53D5397C44}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.BreweryAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BreweryAPI/Models/Ingredient.cs">
+    <Files>
+      <File FileName="BreweryAPI/Models/Equipment.cs" />
+      <File FileName="BreweryAPI/Models/BatchContainer.cs" />
+      <File FileName="BreweryAPI/Models/BreweryContext.cs" />
+      <File FileName="BreweryAPI/Models/ContainerType.cs" />
+      <File FileName="BreweryAPI/Models/FermentableType.cs" />
+      <File FileName="BreweryAPI/Models/Fermentable.cs" />
+      <File FileName="BreweryAPI/Models/Hop.cs" />
+      <File FileName="BreweryAPI/Models/Barrel.cs" />
+      <File FileName="BreweryAPI/Models/IngredientType.cs" />
+      <File FileName="BreweryAPI/Models/BrewContainer.cs" />
+      <File FileName="BreweryAPI/Models/UseDuring.cs" />
+      <File FileName="BreweryAPI/Models/Supplier.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Models/Recipe.cs" Line="23" Column="48" />
+      <File FileName="BreweryAPI/Controllers/AccoutController.cs" Line="21" Column="10" />
+      <File FileName="BreweryAPI/Models/AddressType.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Models/Address.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Models/Account.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Models/Adjunct.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Controllers/AddressController.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Program.cs" Line="1" Column="3" />
+      <File FileName="BreweryAPI/ConfigDB.cs" Line="1" Column="1" />
+      <File FileName="BreweryAPI/mySqlSettings.json" Line="1" Column="1" />
+      <File FileName="BreweryAPI/Models/Ingredient.cs" Line="23" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BreweryAPI">
+            <Node name="BreweryAPI">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Ingredient.cs" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BreweryAPI FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

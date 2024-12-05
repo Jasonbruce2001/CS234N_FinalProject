@@ -1,4 +1,19 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿//using Google.Protobuf.WellKnownTypes;
+using BreweryAPI.Models;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// ADD CORS POLICY - IN A PRODUCTION APP LOCK THIS DOWN!
+builder.Services.AddCors(OPTIONS => {
+    OPTIONS.AddDefaultPolicy(
+BUILDER => {
+    BUILDER.AllowAnyOrigin()
+.WithMethods("POST", "PUT", "DELETE", "GET", "OPTIONS")
+.AllowAnyHeader();
+});
+});
+// ADDING THE DBCONTEXT TO THE SERVICE
+builder.Services.AddDbContext<BreweryContext>();
 
 // Add services to the container.
 
@@ -16,7 +31,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// IN A PRODUCTION APP YOU WOULD WANT TO TURN THIS BACK ON!
+// APP.USEHTTPSREDIRECTION();
+// ENABLES THE CORS POLICY
+app.UseCors();
+
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
