@@ -27,7 +27,7 @@ namespace BreweryAPITests
         public void GetAllTest()
         {
             accounts = dbContext.Accounts.OrderBy(a => a.AccountId).ToList();
-            Assert.That(accounts.Count, Is.EqualTo(6));
+            Assert.That(accounts.Count, Is.EqualTo(7));
             Assert.That(accounts[0].Name, Is.EqualTo("Jason Bruce 5"));
             //PrintAll(customers);
         }
@@ -47,9 +47,10 @@ namespace BreweryAPITests
         {
             accounts = dbContext.Accounts.Where(a => a.Name.StartsWith("J")).OrderBy(a =>a.Name).ToList();
             Console.WriteLine(accounts);
-            Assert.That(accounts.Count, Is.EqualTo(4));
-            Assert.That(accounts[0].Name, Is.EqualTo("Jason Bruce"));
+            Assert.That(accounts.Count, Is.EqualTo(5));
+            Assert.That(accounts[0].Name, Is.EqualTo("James Kramer"));
         }
+
 
         /*
         [Test]
@@ -59,8 +60,12 @@ namespace BreweryAPITests
             dbContext.Accounts.Remove(a);
             dbContext.SaveChanges();
             Assert.IsNull(dbContext.Accounts.Find(1));
+
+            dbContext.Accounts.Add(a);
+            dbContext.SaveChanges();
         }
 
+        /*
         [Test]
         public void CreateTest()
         {

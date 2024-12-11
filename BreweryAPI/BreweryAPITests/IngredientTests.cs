@@ -51,11 +51,15 @@ namespace BreweryAPITests
             Assert.That(ingredients[0].Name, Is.EqualTo("Jarrylo"));
         }
 
+
         /*
         [Test]
         public void DeleteTest()
         {
             a = dbContext.Accounts.Find(1);
+            dbContext.Accounts.Add(a);
+            dbContext.SaveChanges();
+
             dbContext.Accounts.Remove(a);
             dbContext.SaveChanges();
             Assert.IsNull(dbContext.Accounts.Find(1));
