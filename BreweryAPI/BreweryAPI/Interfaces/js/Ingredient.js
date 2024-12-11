@@ -322,6 +322,8 @@
         this.$ingredientUnitType.required = required;
     }
 
+    
+
     // disables an array of buttons
     disableButtons(buttons) {
         buttons.forEach(b => b.onclick = this.disableButton);
@@ -361,6 +363,8 @@
         }
     }
 }
+
+
 
 // instantiate the js app when the html page has finished loading
 window.addEventListener("load", () => new IngredientsPage());

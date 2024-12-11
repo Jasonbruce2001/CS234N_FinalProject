@@ -74,7 +74,7 @@ class CustomerPage {
       }
     })
     .catch(error => {
-      alert('There was a problem getting state info!'); 
+      //alert('There was a problem getting state info!'); 
     });
   }
 
@@ -111,7 +111,7 @@ class CustomerPage {
         }
       })
       .catch(error => {
-        alert('There was a problem getting customer info!'); 
+          alert('There was a problem getting account info!');
       });
     }
     else {
@@ -138,11 +138,11 @@ class CustomerPage {
           alert("Customer was deleted.")
         }
         else{
-          alert('There was a problem deleting customer info!'); 
+          alert('There was a problem deleting account info!'); 
         }
       })
       .catch(error => {
-        alert('There was an error deleting customer info!'); 
+        alert('There was an error deleting account info!'); 
       });
     }
     else {
@@ -156,18 +156,19 @@ class CustomerPage {
   onSaveCustomer(event) {
     event.preventDefault();
     // adding
-    if (this.state.customerId == "") {
+    if (this.state.ingredientId == "") {
       fetch(`${this.url}`, {
         method: 'POST', 
         body: JSON.stringify({
-          customerId: 0, 
-          name: this.$customerName.value,
-          address: this.$customerAddress.value,
-          city: this.$customerCity.value,
-          state: this.$customerState.value,
-          zipCode: this.$customerZipcode.value,
-          invoices: [], 
-          stateNavigation: null
+            name: this.$customerName.value,
+            address: this.$customerAddress.value,
+            city: this.$customerCity.value,
+            state: this.$customerState.value,
+            zipcode: this.$customerZipcode.value,
+            phone: "",
+            contactName: this.$customerContactName,
+            salesPersonName: this.$customerContactName,
+            inventoryTransactions: []
         }),
         headers: {
           'Content-Type': 'application/json'
@@ -187,11 +188,11 @@ class CustomerPage {
           alert("Customer was added.")
         }
         else{
-          alert('There was a problem adding customer info!'); 
+          alert('There was a problem adding account info!'); 
         }
       })
       .catch(error => {
-        alert('There was a problem adding customer info!'); 
+        alert('There was a problem adding account info!'); 
       });
     }
     // updating
@@ -203,7 +204,7 @@ class CustomerPage {
       customer.address = this.$customerAddress.value;
       customer.city = this.$customerCity.value;
       customer.state = this.$customerState.value;
-      customer.zipCode = this.$customerZipcode.value;
+      customer.zipcode = this.$customerZipcode.value;
       fetch(`${this.url}/${this.state.customerId}`, {
         method: 'PUT', 
         body: JSON.stringify(customer),
@@ -222,11 +223,11 @@ class CustomerPage {
           alert("Customer was updated.")
         }
         else{
-          alert('There was a problem updating customer info!'); 
+          alert('There was a problem updating account info!'); 
         }
       })
       .catch(error => {
-        alert('There was a problem adding customer info!'); 
+        alert('There was a problem adding account info!'); 
       });
     }
   }
@@ -280,9 +281,9 @@ class CustomerPage {
     this.$customerCity.value = this.state.customer.city;
     this.loadStates();
     this.$customerState.value = this.state.customer.state;
-    this.$customerZipcode.value = this.state.customer.zipCode;
+    this.$customerZipcode.value = this.state.customer.zipcode;
     this.$customerContactName.value = this.state.customer.contactName;
-    this.$customerSalesPersonName.value = this.state.customer.SalesPersonName;
+    this.$customerSalesPersonName.value = this.state.customer.salesPersonName;
     this.makeFieldsReadOnly();
   }
 
