@@ -1,29 +1,29 @@
 ﻿<Properties StartupConfiguration="{88F60712-E9ED-48F6-A82F-7B53D5397C44}|Default">
+  <MonoDevelop.Ide.ItemProperties.BreweryAPITests FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BreweryApplication/Views/Brew/Ingredients.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BreweryAPITests/UnitTest1.cs">
     <Files>
-      <File FileName="BreweryApplication/wwwroot/css/site.css" />
-      <File FileName="BreweryApplication/Views/Shared/_Layout.cshtml" />
-      <File FileName="BreweryApplication/Views/Pub/Index.cshtml" />
-      <File FileName="BreweryApplication/Views/Sales/Index.cshtml" />
-      <File FileName="BreweryApplication/Controllers/BrewController.cs" />
-      <File FileName="BreweryApplication/Controllers/SalesController.cs" />
-      <File FileName="BreweryApplication/Controllers/AdminController.cs" />
-      <File FileName="BreweryApplication/Controllers/PubController.cs" />
-      <File FileName="BreweryApplication/Controllers/HomeController.cs" />
-      <File FileName="BreweryApplication/Program.cs" />
-      <File FileName="BreweryApplication/Views/Brew/Ingredients.cshtml" Line="15" Column="1" />
+      <File FileName="BreweryApplication/wwwroot/css/site.css" Line="1" Column="1" />
+      <File FileName="BreweryApplication/Views/Shared/_Layout.cshtml" Line="1" Column="16" />
+      <File FileName="BreweryAPI/Interfaces/Accounts.html" Line="82" Column="69" />
+      <File FileName="BreweryAPI/Interfaces/Ingredients.html" Line="11" Column="8" />
+      <File FileName="BreweryAPI/Interfaces/IngredientList.html" Line="5" Column="22" />
+      <File FileName="BreweryAPI/Interfaces/styles/style.css" Line="24" Column="14" />
+      <File FileName="BreweryAPI/Interfaces/js/customer.js" Line="142" Column="10" />
+      <File FileName="BreweryAPI/Interfaces/js/Ingredients.js" Line="188" Column="22" />
+      <File FileName="BreweryAPI/Interfaces/Index.html" Line="50" Column="1" />
+      <File FileName="BreweryAPITests/UnitTest1.cs" Line="18" Column="28" />
+      <File FileName="BreweryAPITests/Usings.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BreweryAPI">
-            <Node name="BreweryAPI" expanded="True" />
-            <Node name="BreweryApplication" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
+          <Node name="BreweryAPI" expanded="True">
+            <Node name="BreweryAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="BreweryAPITests">
+              <Node name="Dependencies" selected="True" />
             </Node>
           </Node>
         </State>
@@ -34,5 +34,7 @@
   <MonoDevelop.Ide.ItemProperties.BreweryApplication PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.BreweryAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

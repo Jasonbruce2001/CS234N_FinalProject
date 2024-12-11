@@ -142,7 +142,7 @@ class CustomerPage {
         }
       })
       .catch(error => {
-        alert('There was a problem deleting customer info!'); 
+        alert('There was an error deleting customer info!'); 
       });
     }
     else {
