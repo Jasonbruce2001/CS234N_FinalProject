@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Pub\" />
+    <None Remove="Views\Sales\" />
+    <None Remove="Views\Brew\" />
+    <None Remove="Views\Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Pub\" />
+    <Folder Include="Views\Sales\" />
+    <Folder Include="Views\Brew\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\Images\favicon.ico" />
+    <Content Remove="wwwroot\Images\transparentLogo.png" />
+    <Content Remove="wwwroot\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Images\favicon.ico" />
+    <None Include="wwwroot\Images\transparentLogo.png" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/y5h+/7BRxmPCbm5ywvmplFby2XYr9uAnZ+du1I0yDDUFOtFnSGhLUePbQEQemQdGxhrQGrpfVNX0t3Trvh77g==",
+  "success": true,
+  "projectFilePath": "/Users/jasonbruce/Documents/Lane Fall 2024/CS234N/CS234N_FinalProject/BreweryAPI/BreweryApplication/BreweryApplication.csproj",
+  "expectedPackageFiles": [
+    "/Users/jasonbruce/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "/Users/jasonbruce/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.31/microsoft.netcore.app.host.osx-x64.6.0.31.nupkg.sha512",
+    "/Users/jasonbruce/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}
